@@ -1,4 +1,4 @@
-add_executable(app main.cxx)
-target_compile_features(app PRIVATE cxx_std_17)
+add_executable(MainApp main.cxx)
+target_compile_features(MainApp PRIVATE cxx_std_17)
 
-target_link_libraries(app PRIVATE maths phrases fmt::fmt)
+target_link_libraries(MainApp PRIVATE numeric utils phrases fmt::fmt)
