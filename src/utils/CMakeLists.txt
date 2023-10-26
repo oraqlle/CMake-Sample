@@ -2,7 +2,7 @@
 # show up in IDEs unless they are listed in add_library.
 
 # Use Glob, but only for CMake 3.12 or later:
-file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${CMakeSample_SOURCE_DIR}/include/maths/*.hxx")
+file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${CMakeSample_SOURCE_DIR}/include/utils/*.hxx")
 
 # Make an automatic library - will be static or dynamic based on user setting
 add_library(utils repeat.cxx bye_world.cxx print.cxx ${HEADER_LIST})

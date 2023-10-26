@@ -1,7 +1,7 @@
 # Note that headers are optional, and do not affect add_library, but they will not
 # show up in IDEs unless they are listed in add_library.
 
-# Us Glob, but only for CMake 3.12 or later:
+# Use Glob, but only for CMake 3.12 or later:
 file(GLOB HEADER_LIST CONFIGURE_DEPENDS "${CMakeSample_SOURCE_DIR}/include/phrases/*.hxx")
 
 # Make an automatic library - will be static or dynamic based on user setting
