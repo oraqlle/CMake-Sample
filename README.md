@@ -41,3 +41,9 @@ ctest --build-and-test . build --build-generator <generator> -DCMAKE_BUILD_TYPE=
 ```sh
 cmake --build . --target docs
 ```
+
+## Basic Clang Tidy
+
+```sh
+clang-tidy -p "build" -config-file=".clang-tidy" "./**/*.hxx" "./**/*.cxx"
+```
